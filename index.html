@@ -1,7 +1,39 @@
 <html>
   <head>
-    <script src="bundle.js"></script>
+    <!--
+        Include AwesomeFonts CSS and JavaScript via a CDN. You may have to include your own link and script tags,
+        which you can easily get and copy and past it here from https://cdnjs.com/libraries/font-awesome.
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JavaScript code to include a custom SVG -->
+    <script>
+        const faSplat = {
+            /* Use a prefix like 'fac' that doesn't conflict with a prefix in the standard Font Awesome styles */
+            prefix: 'fac',
+            /* Any name you like */
+            iconName: 'splat',
+            icon: [
+                /* width */
+                20, 
+                /* height */
+                20,
+                /* ligatures */
+                [],
+                /* unicode */
+                null,
+                /* SVG paths */
+                'M163.006,417.598 L166.015,306.629 L63.506,343.841 L129.87,255.871 L25.5,224.5 L129.87,193.129 L63.506,105.159 L166.015,142.371 L163.006,31.402 L224.5,122.983 L285.995,31.402 L282.985,142.371 L385.495,105.159 L319.13,193.13 L423.5,224.5 L319.13,255.871 L385.494,343.841 L282.984,306.629 L285.994,417.598 L224.5,326.017 z'
+            ]
+        };
+
+        window.FontAwesome.library.add(faSplat);
+    </script>
   </head>
+
+
   <body>
     <i class="fac fa-splat"></i>
   </body>
